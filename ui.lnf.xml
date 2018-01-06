@@ -1,0 +1,6 @@
+<application>
+  <component name="UISettings">
+    <option name="ANIMATE_WINDOWS" value="false" />
+    <option name="PRESENTATION_MODE_FONT_SIZE" value="26" />
+  </component>
+</application>
