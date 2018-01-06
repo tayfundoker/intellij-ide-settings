@@ -4,11 +4,16 @@
   <action id="CloseAllEditors">
     <keyboard-shortcut first-keystroke="shift ctrl w" />
   </action>
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
   <action id="CompareTwoFiles" />
   <action id="Console.TableResult.CloneRow" />
   <action id="Console.TableResult.ColumnsList" />
   <action id="Console.TableResult.NextPage" />
+  <action id="CopyPaths" />
   <action id="DatabaseView.CopyAction" />
+  <action id="DatabaseView.CopyDdlAction" />
   <action id="Diff.ShowDiff" />
   <action id="DuplicatesForm.SendToLeft" />
   <action id="EditorDeleteLine">
