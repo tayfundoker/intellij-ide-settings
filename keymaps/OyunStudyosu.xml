@@ -1,4 +1,4 @@
-<keymap version="1" name="Default copy" parent="$default">
+<keymap version="1" name="OyunStudyosu" parent="$default">
   <action id="ChangesView.Diff" />
   <action id="ClassTemplateNavigation" />
   <action id="CloseAllEditors">
