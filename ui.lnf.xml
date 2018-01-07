@@ -4,7 +4,6 @@
   </component>
   <component name="UISettings">
     <option name="ANIMATE_WINDOWS" value="false" />
-    <option name="HIDE_TOOL_STRIPES" value="false" />
     <option name="PRESENTATION_MODE_FONT_SIZE" value="26" />
   </component>
 </application>
