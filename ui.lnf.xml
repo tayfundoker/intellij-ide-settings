@@ -4,6 +4,9 @@
   </component>
   <component name="UISettings">
     <option name="ANIMATE_WINDOWS" value="false" />
-    <option name="PRESENTATION_MODE_FONT_SIZE" value="26" />
+    <option name="FONT_SCALE" value="1.25" />
+    <option name="FONT_SIZE" value="17" />
+    <option name="OVERRIDE_NONIDEA_LAF_FONTS" value="true" />
+    <option name="PRESENTATION_MODE_FONT_SIZE" value="28" />
   </component>
 </application>
