@@ -1,5 +1,9 @@
 <keymap version="1" name="Mac OS X 10.5+ copy" parent="Mac OS X 10.5+">
   <action id="ActivateProjectToolWindow" />
+  <action id="AutoIndentLines">
+    <keyboard-shortcut first-keystroke="ctrl alt i" />
+    <keyboard-shortcut first-keystroke="shift alt o" />
+  </action>
   <action id="ClassTemplateNavigation" />
   <action id="CloseAllEditors">
     <keyboard-shortcut first-keystroke="shift meta w" />
