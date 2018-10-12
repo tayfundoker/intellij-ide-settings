@@ -1,6 +1,9 @@
 <keymap version="1" name="Default copy" parent="$default">
   <action id="Arrangement.Rule.Edit" />
   <action id="ChangesView.Diff" />
+  <action id="CloseAllEditors">
+    <keyboard-shortcut first-keystroke="shift ctrl w" />
+  </action>
   <action id="CommentByLineComment">
     <keyboard-shortcut first-keystroke="shift ctrl c" />
   </action>
@@ -24,6 +27,7 @@
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="ctrl alt down" />
   </action>
+  <action id="EditorUnSelectWord" />
   <action id="FileChooser.GotoDesktop" />
   <action id="FileChooser.GotoHome" />
   <action id="FileStructurePopup" />
