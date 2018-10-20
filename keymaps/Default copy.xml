@@ -1,6 +1,9 @@
 <keymap version="1" name="Default copy" parent="$default">
   <action id="Arrangement.Rule.Edit" />
   <action id="ChangesView.Diff" />
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
   <action id="CompareTwoFiles" />
   <action id="Console.TableResult.CloneRow" />
   <action id="Console.TableResult.ColumnsList" />
@@ -9,7 +12,9 @@
     <keyboard-shortcut first-keystroke="alt enter" />
   </action>
   <action id="Console.TableResult.NextPage" />
+  <action id="CopyPaths" />
   <action id="DatabaseView.CopyAction" />
+  <action id="DatabaseView.CopyDdlAction" />
   <action id="Debugger.EditArrayFilter" />
   <action id="Diff.ShowDiff" />
   <action id="DuplicatesForm.SendToLeft" />
