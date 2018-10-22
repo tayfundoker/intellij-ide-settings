@@ -1,6 +1,0 @@
-<application>
-  <component name="CodeInsightSettings">
-    <EXCLUDED_PACKAGE NAME="java.util.Date" />
-    <EXCLUDED_PACKAGE NAME="java.util.Map" />
-  </component>
-</application>
