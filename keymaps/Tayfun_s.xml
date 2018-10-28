@@ -31,6 +31,9 @@
   <action id="EditorUnSelectWord" />
   <action id="FileChooser.GotoDesktop" />
   <action id="FileChooser.GotoHome" />
+  <action id="FileChooser.NewFolder">
+    <keyboard-shortcut first-keystroke="alt insert" />
+  </action>
   <action id="FileStructurePopup">
     <keyboard-shortcut first-keystroke="ctrl q" />
   </action>
@@ -50,6 +53,8 @@
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
   <action id="GotoBookmark1" />
+  <action id="GotoChangedFile" />
+  <action id="GotoClass" />
   <action id="GotoDeclaration">
     <keyboard-shortcut first-keystroke="f3" />
   </action>
@@ -62,6 +67,9 @@
   <action id="GuiDesigner.EditComponent" />
   <action id="GuiDesigner.EditGroup" />
   <action id="Images.ShowThumbnails" />
+  <action id="NewElementInMenuGroup">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
   <action id="NextOccurence" />
   <action id="OptimizeImports">
     <keyboard-shortcut first-keystroke="shift ctrl o" />
