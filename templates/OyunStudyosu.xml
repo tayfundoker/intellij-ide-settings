@@ -4,12 +4,12 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="addDispatcher" value="@Autowired&#10;  protected ApplicationEventPublisher dispatcher;" toReformat="false" toShortenFQNames="true">
+  <template name="addDispatcher" value="@Autowired&#10;  protected ApplicationEventPublisher dispatcher;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="foreach" value="for ($ELEMENT_TYPE$ $VAR$ : $ITERABLE_TYPE$) {&#10;    $END$&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="foreach" value="for ($ELEMENT_TYPE$ $VAR$ : $ITERABLE_TYPE$) {&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <variable name="ITERABLE_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ELEMENT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -17,12 +17,12 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="addLogger" value="@Autowired&#10;  protected Logger logger;" toReformat="false" toShortenFQNames="true">
+  <template name="addLogger" value="@Autowired&#10;  protected Logger logger;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="addContext" value="@Autowired &#10;  private ApplicationContext context;" toReformat="false" toShortenFQNames="true">
+  <template name="addContext" value="@Autowired &#10;  private ApplicationContext context;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
