@@ -27,4 +27,12 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="injectProperty" value="@Value(&quot;${$NAME$}&quot;)&#10;private $ELEMENT_TYPE$ $VAR$;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
