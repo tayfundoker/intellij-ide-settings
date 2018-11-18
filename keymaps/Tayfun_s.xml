@@ -13,7 +13,6 @@
   <action id="Console.TableResult.ColumnsList" />
   <action id="Console.TableResult.EditValue">
     <keyboard-shortcut first-keystroke="enter" />
-    <keyboard-shortcut first-keystroke="alt enter" />
   </action>
   <action id="Console.TableResult.NextPage" />
   <action id="CopyPaths" />
@@ -48,6 +47,9 @@
   </action>
   <action id="FindUsages">
     <keyboard-shortcut first-keystroke="shift ctrl g" />
+  </action>
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="alt enter" />
   </action>
   <action id="Git.Reword.Commit">
     <keyboard-shortcut first-keystroke="shift f6" />
