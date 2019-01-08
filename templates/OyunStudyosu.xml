@@ -46,4 +46,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="byteBool" value="public boolean get$NAME$()&#10;  {&#10;    return $NAME$ == 1;&#10;  }&#10;&#10;  public void set$NAME$(boolean $NAME$)&#10;  {&#10;    this.$NAME$ = $NAME$ ? (byte) 1 : 0;&#10;  }" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
