@@ -26,9 +26,4 @@
     <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="todo" value="// TODO: $date$ $todo$ " description="adds // TODO" toReformat="true" toShortenFQNames="true" deactivated="true">
-    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
-    <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
-  </template>
 </templateSet>
