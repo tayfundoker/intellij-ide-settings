@@ -52,4 +52,34 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="getReqData" value="$TYPE$ vo = model.getRequestData($TYPE$.class);" description="Get request data from model by type." toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="serviceConfig" value="@RequestMapping(value = &quot;/enter-url&quot;, method = RequestMethod.POST)&#10;  @AddRequestFilter(type = RequestFilter.class)&#10;  @AddRequestProcess(type = Process.class)&#10;  @AddResponseFilter(name = &quot;enterFilterName&quot;, fields = &quot;enter,field,list&quot;)&#10;  public void configuration(@RequestBody final $TYPE$ data)&#10;  {&#10;  }" description="Add service config function." toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="filterClass" value="import com.oyunstudyosu.eros.core.exceptions.RequestFilterException;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestFilter;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestFilter&#10;{&#10;  @Override&#10;  public void execute(IRequestInfo request) throws RequestFilterException&#10;  {&#10;    $END$&#10;  }&#10;}" description="Create empty filter class." toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="processClass" value="import com.oyunstudyosu.eros.core.interfaces.IRequestProcess;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestProcess&#10;{&#10;  public void execute(IRequestInfo model)&#10;  {&#10;    $END$&#10;  }&#10;}&#10;" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getResData" value="$TYPE$ responseVo = model.getResponseData($TYPE$.class);" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
