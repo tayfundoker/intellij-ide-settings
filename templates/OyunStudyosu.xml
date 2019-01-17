@@ -70,7 +70,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="processClass" value="import com.oyunstudyosu.eros.core.interfaces.IRequestProcess;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestProcess&#10;{&#10;  public void execute(IRequestInfo model) throws ProcessException&#10;  {&#10;    $END$&#10;  }&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="processClass" value="import com.oyunstudyosu.eros.core.interfaces.IRequestProcess;&#10;import com.oyunstudyosu.eros.core.exceptions.ProcessException;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestProcess&#10;{&#10;  public void execute(IRequestInfo model) throws ProcessException&#10;  {&#10;    $END$&#10;  }&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_CODE" value="true" />
