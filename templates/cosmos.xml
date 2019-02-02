@@ -1,0 +1,7 @@
+<templateSet group="cosmos">
+  <template name="notifyUser" value="EventManager.dispatchEvent(&quot;Application.NOTIFY_USER&quot;, {&#10;                        type: &quot;success&quot;,&#10;                        message: &quot;Configs reloaded.&quot;&#10;                    });" description="Show user a message" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

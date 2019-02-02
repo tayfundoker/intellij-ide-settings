@@ -15,9 +15,11 @@
     <keyboard-shortcut first-keystroke="enter" />
   </action>
   <action id="Console.TableResult.NextPage" />
+  <action id="CopyElement" />
   <action id="CopyPaths" />
   <action id="DatabaseView.CopyAction" />
   <action id="DatabaseView.CopyDdlAction" />
+  <action id="DatabaseView.CopyTable" />
   <action id="Debugger.EditArrayFilter" />
   <action id="Diff.ShowDiff" />
   <action id="DuplicatesForm.SendToLeft" />
@@ -88,6 +90,9 @@
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="f2" />
   </action>
+  <action id="Resume">
+    <keyboard-shortcut first-keystroke="f5" />
+  </action>
   <action id="RunDashboard.CopyConfiguration" />
   <action id="RunDashboard.ShowConfigurations" />
   <action id="SearchEverywhere">
@@ -100,12 +105,19 @@
   <action id="ShowIntentionActions">
     <keyboard-shortcut first-keystroke="ctrl 1" />
   </action>
+  <action id="StepInto">
+    <keyboard-shortcut first-keystroke="f11" />
+  </action>
+  <action id="StepOver">
+    <keyboard-shortcut first-keystroke="f10" />
+  </action>
   <action id="ToggleBookmark">
     <keyboard-shortcut first-keystroke="ctrl b" />
   </action>
   <action id="TypeHierarchy" />
   <action id="TypeHierarchy.BaseOnThisType" />
   <action id="TypeHierarchyBase.BaseOnThisType" />
+  <action id="UML.ApplyCurrentLayout" />
   <action id="UML.ShowStructure" />
   <action id="XDebugger.EditWatch" />
   <action id="XDebugger.SetValue" />

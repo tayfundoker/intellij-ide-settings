@@ -41,4 +41,59 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="logjs" value="console.log($END$);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="byteBool" value="public boolean get$NAME$()&#10;  {&#10;    return $NAME$ == 1;&#10;  }&#10;&#10;  public void set$NAME$(boolean $NAME$)&#10;  {&#10;    this.$NAME$ = $NAME$ ? (byte) 1 : 0;&#10;  }" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getReqData" value="$TYPE$ vo = model.getRequestData($TYPE$.class);" description="Get request data from model by type." toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="serviceConfig" value="import com.oyunstudyosu.eros.core.annotations.AddRequestFilter;&#10;import com.oyunstudyosu.eros.core.annotations.AddRequestProcess;&#10;import com.oyunstudyosu.eros.core.annotations.AddResponseFilter;&#10;import org.springframework.web.bind.annotation.RequestBody;&#10;import org.springframework.web.bind.annotation.RequestMapping;&#10;import org.springframework.web.bind.annotation.RequestMethod;&#10;&#10;public class $CLASS_NAME$&#10;{&#10;  @RequestMapping(value = &quot;/enter-url&quot;, method = RequestMethod.POST)&#10;  @AddRequestFilter(type = RequestFilter.class)&#10;  @AddRequestProcess(type = Process.class)&#10;  @AddResponseFilter(name = &quot;enterFilterName&quot;, fields = &quot;enter,field,list&quot;)&#10;  public void configuration(@RequestBody final data)&#10;  {&#10;  }&#10;}&#10;" description="Add service config function." toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="filterClass" value="import com.oyunstudyosu.eros.core.exceptions.RequestFilterException;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestFilter;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestFilter&#10;{&#10;  @Override&#10;  public void execute(IRequestInfo model) throws RequestFilterException&#10;  {&#10;    $END$&#10;  }&#10;}" description="Create empty filter class." toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="processClass" value="import com.oyunstudyosu.eros.core.interfaces.IRequestProcess;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestProcess&#10;{&#10;  public void execute(IRequestInfo model) throws ProcessException&#10;  {&#10;    $END$&#10;  }&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getResData" value="$TYPE$ responseVo = model.getResponseData($TYPE$.class);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tfe" value="throw new RequestFilterException($CODE$, $MESSAGE$);" description="Throws filter exception" toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tpe" value="throw new ProcessException($CODE$, $MESSAGE$);" description="Throws process exception." toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
