@@ -4,6 +4,7 @@
     <option name="confirmOpenNewProject2" value="0" />
     <option name="reopenLastProject" value="false" />
     <option name="autoSaveFiles" value="false" />
+    <option name="searchInBackground" value="true" />
     <option name="showTipsOnStartup" value="false" />
     <option name="autoSyncFiles" value="false" />
   </component>
