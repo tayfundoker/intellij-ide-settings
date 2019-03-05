@@ -106,4 +106,10 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="addServiceData" value="@ServiceMapping(name = &quot;$NAME$&quot;, typeList = {ServiceType.Web})&#10;  @ResponseData(type = $END$.class)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
