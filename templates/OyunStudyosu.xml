@@ -96,17 +96,17 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="getTimeMilliseconds" value="Calendar.getInstance().getTimeInMillis()" toReformat="false" toShortenFQNames="true">
+  <template name="getTimeMilliseconds" value="Calendar.getInstance().getTimeInMillis()" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="getPlayer" value="Player player = playerModel.getById(model.getUserId());" toReformat="false" toShortenFQNames="true">
+  <template name="getPlayer" value="Player player = playerModel.getById(model.getUserId());" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="addServiceData" value="@ServiceMapping(name = &quot;$NAME$&quot;, typeList = {ServiceType.Web})&#10;  @ResponseData(type = $END$.class)" toReformat="false" toShortenFQNames="true">
+  <template name="addServiceData" value="@ServiceMapping(name = &quot;$NAME$&quot;, typeList = {ServiceType.Web})&#10;  @ResponseData(type = $END$.class)" description="" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
