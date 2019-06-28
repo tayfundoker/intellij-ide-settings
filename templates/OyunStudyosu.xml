@@ -112,12 +112,12 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="initList" value="if (list == null)&#10;    { list = new ArrayList&lt;&gt;(); }" toReformat="false" toShortenFQNames="true">
+  <template name="initList" value="if (list == null)&#10;    { list = new ArrayList&lt;&gt;(); }" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="makeAdmin" value="@AddRequestFilter(type = AdminAccountFilter.class)&#10;  @AddRequestFilter(type = ServiceLevelFilter.class)" toReformat="false" toShortenFQNames="true">
+  <template name="makeAdmin" value="@AddRequestFilter(type = AdminAccountFilter.class)&#10;  @AddRequestFilter(type = ServiceLevelFilter.class)" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
