@@ -128,7 +128,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="addPropertyFacade" value="@Autowired&#10;private PropertyFacade propertyFacade;" toReformat="false" toShortenFQNames="true">
+  <template name="addPropertyFacade" value="@Autowired&#10;private PropertyFacade propertyFacade;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
