@@ -133,7 +133,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="postConst" value="@PostConstruct&#10;  public void OnPostConstruct() { reload(); }" toReformat="false" toShortenFQNames="true">
+  <template name="postConst" value="@PostConstruct&#10;  public void OnPostConstruct() { reload(); }" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
