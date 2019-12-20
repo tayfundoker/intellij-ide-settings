@@ -1,0 +1,7 @@
+<templateSet group="ErosQuestScript">
+  <template name="OnLocationChanged" value="OnLocationChanged: function (locationChangedData) {&#10;    }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
