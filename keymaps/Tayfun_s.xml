@@ -21,6 +21,7 @@
   <action id="DatabaseView.CopyDdlAction" />
   <action id="DatabaseView.CopyTable" />
   <action id="Debugger.EditArrayFilter" />
+  <action id="Diff.FocusOppositePane" />
   <action id="Diff.ShowDiff" />
   <action id="DuplicatesForm.SendToLeft" />
   <action id="EditorDeleteLine">
@@ -111,8 +112,17 @@
   <action id="StepOver">
     <keyboard-shortcut first-keystroke="f10" />
   </action>
+  <action id="Switcher">
+    <keyboard-shortcut first-keystroke="shift ctrl tab" />
+  </action>
   <action id="ToggleBookmark">
     <keyboard-shortcut first-keystroke="ctrl b" />
+  </action>
+  <action id="ToggleDistractionFreeMode">
+    <keyboard-shortcut first-keystroke="ctrl quotedbl" />
+  </action>
+  <action id="ToggleFullScreen">
+    <keyboard-shortcut first-keystroke="ctrl tab" />
   </action>
   <action id="TypeHierarchy" />
   <action id="TypeHierarchy.BaseOnThisType" />
