@@ -1,5 +1,5 @@
 <application>
-  <component name="DatabaseSettings" version="3">
+  <component name="DatabaseSettings" version="4">
     <option name="ddl-editor-confirm-loss" value="false" />
     <text-mode>
       <parameter-patterns>
@@ -7,7 +7,7 @@
         <parameter-pattern value="(?&lt;=\W|\A)\$(\d+|[a-zA-Z_](?:\w|\.)*)\$?(?=\W|\z)" scope="*,-SQL" predefined="$a.b.c$?" />
         <parameter-pattern value="(?&lt;=\W|\A)#(\d+|[a-zA-Z_](?:\w|\.)*)#?(?=\W|\z)" scope="*,-SQL" predefined="#a.b.c#?" />
         <parameter-pattern value="%\((\w+)\)s" scope="Python" predefined="%(name)s" />
-        <parameter-pattern value="%\w+" scope="JAVA,Python" predefined="%name" />
+        <parameter-pattern value="%\w+" scope="JAVA,Python,PHP" predefined="%name" />
         <parameter-pattern value="\$\{([^\{\}]*)\}" predefined="${name}" />
         <parameter-pattern value="\$\(([^\)]+)\)" predefined="$(name)" />
       </parameter-patterns>
@@ -15,13 +15,21 @@
     <csv-formats>
       <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
         <data>
-          <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator="&#9;" recordSeparator="&#10;">
+          <record-format prefix="" suffix="" nullText="\N" quotationPolicy="as needed" valueSeparator="&#9;" recordSeparator="&#10;">
             <quotation>
               <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
               <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
             </quotation>
           </record-format>
         </data>
+        <header>
+          <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator="&#9;" recordSeparator="&#10;">
+            <quotation>
+              <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+              <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+            </quotation>
+          </record-format>
+        </header>
       </csv-format>
       <csv-format name="Comma-separated (CSV)" id="Comma-separated (CSV)_id">
         <data>
