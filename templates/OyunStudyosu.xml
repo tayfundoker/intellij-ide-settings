@@ -138,4 +138,14 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="reportAdd" value="@Autowired&#10;  private ReportingFacade reportingFacade;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="reportError" value="reportingFacade.logSystemError(e,&quot;&quot;,&quot;&quot;);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
