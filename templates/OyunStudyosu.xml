@@ -58,19 +58,19 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="serviceConfig" value="import com.oyunstudyosu.eros.core.annotations.AddRequestFilter;&#10;import com.oyunstudyosu.eros.core.annotations.AddRequestProcess;&#10;import com.oyunstudyosu.eros.core.annotations.ResponseData;&#10;import com.oyunstudyosu.eros.core.annotations.ServiceMapping;&#10;import com.oyunstudyosu.eros.core.enums.ServiceType;&#10;import com.oyunstudyosu.eros.modules.account.controller.avatarList.process.GetAvatarListProcess;&#10;import com.oyunstudyosu.eros.modules.account.controller.avatarList.vo.AvatarListResponseVo;&#10;import com.oyunstudyosu.eros.modules.account.filter.AccountFilterIsAuthenticated;&#10;import org.springframework.web.bind.annotation.RequestMapping;&#10;import org.springframework.web.bind.annotation.RequestMethod;&#10;import org.springframework.web.bind.annotation.RequestBody;&#10;&#10;public class $CLASS_NAME$&#10;{&#10;  @RequestMapping(value = &quot;/enter-url&quot;, method = RequestMethod.POST)&#10;  @ServiceMapping(name = &quot;enter-url&quot;,typeList = {ServiceType.Web})&#10;  @ResponseData(type = ResponseVo.class)&#10;  @AddRequestFilter(type = AccountFilterIsAuthenticated.class)&#10;  @AddRequestProcess(type = Process.class)&#10;  @AddResponseFilter(name = &quot;enterFilterName&quot;, fields = &quot;enter,field,list&quot;)&#10;  public void configuration(@RequestBody final RequestVo data)&#10;  {&#10;  }&#10;}&#10;" description="Add service config function." toReformat="false" toShortenFQNames="true">
+  <template name="serviceConfig" value="import com.jib.eros.core.annotations.AddRequestFilter;&#10;import com.jib.eros.core.annotations.AddRequestProcess;&#10;import com.jib.eros.core.annotations.ResponseData;&#10;import com.jib.eros.core.annotations.ServiceMapping;&#10;import com.jib.eros.core.enums.ServiceType;&#10;import com.jib.eros.modules.account.controller.avatarList.process.GetAvatarListProcess;&#10;import com.jib.eros.modules.account.controller.avatarList.vo.AvatarListResponseVo;&#10;import com.jib.eros.modules.account.filter.AccountFilterIsAuthenticated;&#10;import org.springframework.web.bind.annotation.RequestMapping;&#10;import org.springframework.web.bind.annotation.RequestMethod;&#10;import org.springframework.web.bind.annotation.RequestBody;&#10;&#10;public class $CLASS_NAME$&#10;{&#10;  @RequestMapping(value = &quot;/enter-url&quot;, method = RequestMethod.POST)&#10;  @ServiceMapping(name = &quot;enter-url&quot;,typeList = {ServiceType.Web})&#10;  @ResponseData(type = ResponseVo.class)&#10;  @AddRequestFilter(type = AccountFilterIsAuthenticated.class)&#10;  @AddRequestProcess(type = Process.class)&#10;  @AddResponseFilter(name = &quot;enterFilterName&quot;, fields = &quot;enter,field,list&quot;)&#10;  public void configuration(@RequestBody final RequestVo data)&#10;  {&#10;  }&#10;}&#10;" description="Add service config function." toReformat="false" toShortenFQNames="true">
     <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="filterClass" value="import com.oyunstudyosu.eros.core.exceptions.RequestFilterException;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestFilter;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestFilter&#10;{&#10;  @Override&#10;  public void execute(IRequestInfo model) throws RequestFilterException&#10;  {&#10;    $END$&#10;  }&#10;}" description="Create empty filter class." toReformat="false" toShortenFQNames="true">
+  <template name="filterClass" value="import com.jib.eros.core.exceptions.RequestFilterException;&#10;import com.jib.eros.core.interfaces.IRequestFilter;&#10;import com.jib.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestFilter&#10;{&#10;  @Override&#10;  public void execute(IRequestInfo model) throws RequestFilterException&#10;  {&#10;    $END$&#10;  }&#10;}" description="Create empty filter class." toReformat="false" toShortenFQNames="true">
     <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="processClass" value="import com.oyunstudyosu.eros.core.interfaces.IRequestProcess;&#10;import com.oyunstudyosu.eros.core.exceptions.ProcessException;&#10;import com.oyunstudyosu.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestProcess&#10;{&#10;  public void execute(IRequestInfo model) throws ProcessException&#10;  {&#10;    $END$&#10;  }&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="processClass" value="import com.jib.eros.core.interfaces.IRequestProcess;&#10;import com.jib.eros.core.exceptions.ProcessException;&#10;import com.jib.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestProcess&#10;{&#10;  public void execute(IRequestInfo model) throws ProcessException&#10;  {&#10;    $END$&#10;  }&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_CODE" value="true" />
@@ -134,6 +134,16 @@
     </context>
   </template>
   <template name="postConst" value="@PostConstruct&#10;  public void OnPostConstruct() { reload(); }" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="reportAdd" value="@Autowired&#10;  private ReportingFacade reportingFacade;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="reportError" value="reportingFacade.logSystemError(e,&quot;&quot;,&quot;&quot;);" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
