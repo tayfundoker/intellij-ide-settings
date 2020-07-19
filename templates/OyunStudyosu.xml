@@ -148,4 +148,9 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="runService" value="ServiceRunVo runVo = new ServiceRunVo();&#10;    runVo.setServiceType(ServiceType.Socket);&#10;    runVo.setCommand(&quot;shopping-buy&quot;);&#10;    runVo.setPlayerId(model.getUserId());&#10;    runVo.setPlatform(model.getPlatform());&#10;    runVo.setRequestVo(buyItemRequestVo);&#10;    runVo.setLanguage(model.getLanguage());&#10;    runVo.setSkipFilters(true);&#10;&#10;    RequestInfo requestInfo = new RequestInfo();&#10;    serviceModel.run(runVo, requestInfo);&#10;&#10;    GenericResponseVo&lt;Object&gt; response = requestInfo.getResponse();&#10;&#10;    if (!response.isSuccess())&#10;    { throw new ProcessException(response.getResponseCode(), response.getErrorMessage()); }&#10;&#10;    BuyItemResponseVo buyResponse = requestInfo.getResponseData(BuyItemResponseVo.class);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
