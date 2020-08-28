@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="StreamingAssets" type="JSON" />
+      <mapping ext="gradle.kts" type="Kotlin" />
       <mapping pattern="roomDesignUpdate.html" type="PLAIN_TEXT" />
       <mapping pattern="post-merge" type="PLAIN_TEXT" />
       <mapping pattern="test" type="PLAIN_TEXT" />
