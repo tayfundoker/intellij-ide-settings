@@ -153,4 +153,18 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="itemProperty" value="import com.jib.eros.modules.system.property.BaseProperty;&#10;import com.jib.eros.modules.system.property.IPropertyContext;&#10;import com.jib.eros.modules.system.property.PropertyType;&#10;&#10;public class $CLASS_NAME$ extends BaseProperty&#10;{&#10;  @Override&#10;  public int getId()&#10;  {&#10;    return $ID$;&#10;  }&#10;&#10;  @Override&#10;  public PropertyType getType()&#10;  {&#10;    return PropertyType.Item;&#10;  }&#10;&#10;  $END$&#10;&#10;  public $CLASS_NAME$()&#10;  {&#10;    super();&#10;  }&#10;&#10;  @Override&#10;  public BaseProperty toInventory(IPropertyContext context)&#10;  {&#10;    Live$CLASS_NAME$ liveProperty = new Live$CLASS_NAME$();&#10;    return liveProperty;&#10;  }&#10;&#10;  @Override&#10;  public Class&lt;? extends BaseProperty&gt; getInventoryType()&#10;  {&#10;    return Live$CLASS_NAME$.class;&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="0" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="liveProperty" value="import com.jib.eros.modules.system.property.BaseProperty;&#10;import com.jib.eros.modules.system.property.PropertyType;&#10;&#10;public class $CLASS_NAME$ extends BaseProperty&#10;{&#10;  @Override&#10;  public int getId()&#10;  {&#10;    return $ID$;&#10;  }&#10;&#10;  @Override&#10;  public PropertyType getType()&#10;  {&#10;    return PropertyType.Inventory;&#10;  }&#10;&#10;  public $CLASS_NAME$()&#10;  {&#10;    super();&#10;  }&#10;&#10;  @Override&#10;  public Class&lt;? extends BaseProperty&gt; getItemType()&#10;  {&#10;    return $END$$CLASS_NAME$.class;&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
