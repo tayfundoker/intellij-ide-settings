@@ -9,7 +9,7 @@
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.js</mask>
-    <mask>*.java</mask>
     <mask>*.json</mask>
+    <mask>*.java</mask>
   </component>
 </application>
