@@ -1,7 +1,7 @@
 <scheme name="Visual Studio 2015" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="modified">2020-09-30T14:50:46</property>
+    <property name="modified">2020-10-08T10:49:12</property>
     <property name="rainbow Default language">true</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
@@ -380,17 +380,17 @@
     </option>
     <option name="RAINBOW_COLOR0">
       <value>
-        <option name="FOREGROUND" value="fab9db" />
+        <option name="FOREGROUND" value="ffb3da" />
       </value>
     </option>
     <option name="RAINBOW_COLOR1">
       <value>
-        <option name="FOREGROUND" value="8cb7ef" />
+        <option name="FOREGROUND" value="8cbcfc" />
       </value>
     </option>
     <option name="RAINBOW_COLOR2">
       <value>
-        <option name="FOREGROUND" value="f8c592" />
+        <option name="FOREGROUND" value="e5ffa9" />
       </value>
     </option>
     <option name="RAINBOW_COLOR3">
@@ -400,7 +400,7 @@
     </option>
     <option name="RAINBOW_COLOR4">
       <value>
-        <option name="FOREGROUND" value="fcb0af" />
+        <option name="FOREGROUND" value="859eff" />
       </value>
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
