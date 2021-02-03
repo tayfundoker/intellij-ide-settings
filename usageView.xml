@@ -3,6 +3,7 @@
     <option name="SHOW_IMPORTS" value="false" />
   </component>
   <component name="ShowUsagesSettings">
+    <option name="IS_FILTER_DUPLICATED_LINE" value="false" />
     <option name="IS_PREVIEW_USAGES" value="true" />
     <option name="PREVIEW_USAGES_SPLITTER_PROPORTIONS" value="0.470024" />
   </component>
