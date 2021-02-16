@@ -10,8 +10,8 @@
       <mapping pattern=".Makefile.swp" type="PLAIN_TEXT" />
       <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="bson" type="PLAIN_TEXT" />
-      <mapping ext="jks" type="PLAIN_TEXT" />
       <mapping ext="template" type="PLAIN_TEXT" />
+      <mapping ext="jks" type="PLAIN_TEXT" />
       <mapping ext="unityweb" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
