@@ -1,5 +1,5 @@
 <application>
-  <component name="FileTypeManager" version="17">
+  <component name="FileTypeManager" version="18">
     <extensionMap>
       <mapping pattern="StreamingAssets" type="JSON" />
       <mapping ext="gradle.kts" type="Kotlin" />
@@ -7,12 +7,12 @@
       <mapping pattern="post-merge" type="PLAIN_TEXT" />
       <mapping pattern="test" type="PLAIN_TEXT" />
       <mapping pattern="roomDesignUpdate.html" type="PLAIN_TEXT" />
-      <mapping pattern=".Makefile.swp" type="PLAIN_TEXT" />
       <mapping ext="service" type="PLAIN_TEXT" />
-      <mapping ext="bson" type="PLAIN_TEXT" />
-      <mapping ext="jks" type="PLAIN_TEXT" />
       <mapping ext="template" type="PLAIN_TEXT" />
+      <mapping ext="jks" type="PLAIN_TEXT" />
       <mapping ext="unityweb" type="PLAIN_TEXT" />
+      <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
+      <removed_mapping ext="psd" approved="true" type="Image" />
     </extensionMap>
   </component>
 </application>
