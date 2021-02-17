@@ -1,4 +1,4 @@
-<keymap version="1" name="Tayfun's" parent="$default">
+<keymap version="1" name="jibgames" parent="$default">
   <action id="Arrangement.Rule.Edit" />
   <action id="BaseOnThisFunction" />
   <action id="ChangesView.Diff" />
