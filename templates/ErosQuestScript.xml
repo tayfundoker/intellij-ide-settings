@@ -156,4 +156,14 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="OnAvatarInteract" value="OnAvatarInteract: function (eventData) {&#10;}" description="avatar interact with furniture listener." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="addReward" value="getRewards: function () {&#10;        return rewards;&#10;}," description="add rewards to quest completed." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
