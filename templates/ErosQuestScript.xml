@@ -4,4 +4,34 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="addBot" value="var properties = props(interactionProp(&quot;run&quot;), dialogProp(settings.dialogKey), iconProp(QuestState.InProgress));&#10;avatarData.botId = locationFacade.addQuestFurniture(avatarId, settings.bots[accountFacade.getAvatarGender(avatarId)], properties, JSON.stringify(address));&#10;" description="adding bot into current location according given props." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="highlightui" value="questFacade.highlightUiElements(settings.keys,avatarId);" description="highlight ui elements according given ui key." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="addIcon" value="var properties = props(iconProp(QuestState.InProgress));&#10;questFacade.updateQuestFurniture(siloInventoryId, avatarId, properties);" description="add quest icon on the given inventory at game." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="addMetadata" value="getMetaData: function (language) {&#10;        var result = metadata[language];&#10;        if (result === undefined)&#10;            result = metadata[&quot;en&quot;];&#10;        result.description = result.description.replace(&quot;{targetTitle}&quot;, avatarData.targetTitle);&#10;        return result;&#10; }" description="add dafult metadata func." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="addMapData" value="    getMapData: function (eventData, locationFacade) {&#10;        var mapData = {list: []};&#10;&#10;        var list = locationFacade.getInventoryAddress(avatarId, settings.itemAssetKey);&#10;&#10;        for (var i = 0; i &lt; list.length; i++) {&#10;            var address = JSON.parse(list[i]);&#10;            address.state = QuestState.InProgress;&#10;            mapData.list.push(address);&#10;        }&#10;&#10;        return mapData;&#10;&#10;    }," description="add quest icon to map and game hud screen according given item assetkey." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="notify" value="gameFacade.sendNotification(avatarId, settings.message);" description="send notify" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
