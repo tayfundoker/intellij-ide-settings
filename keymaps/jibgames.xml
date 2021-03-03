@@ -1,4 +1,4 @@
-<keymap version="1" name="Tayfun's" parent="$default">
+<keymap version="1" name="jibgames" parent="$default">
   <action id="Arrangement.Rule.Edit" />
   <action id="BaseOnThisFunction" />
   <action id="ChangesView.Diff" />
@@ -89,6 +89,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
   <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="f2" />
+  </action>
+  <action id="RenameFile">
     <keyboard-shortcut first-keystroke="f2" />
   </action>
   <action id="Resume">
