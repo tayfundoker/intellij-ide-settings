@@ -12,7 +12,7 @@
     <mask>*.html</mask>
     <mask>*.json</mask>
     <mask>*.hx</mask>
-    <mask>*.js</mask>
     <mask>*.java</mask>
+    <mask>*.js</mask>
   </component>
 </application>
