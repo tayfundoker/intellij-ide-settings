@@ -4,4 +4,171 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="addBot" value="var properties = props(interactionProp($key$), dialogProp($dialogKey$), iconProp(QuestState.InProgress));&#10;avatarData.botId = locationFacade.addQuestFurniture(avatarId, settings.bots[accountFacade.getAvatarGender($avatarId$)], properties, JSON.stringify($address$));&#10;$END$" description="adding bot into current location according given props." toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="camelCase(String)" defaultValue="&quot;run&quot;" alwaysStopAt="false" />
+    <variable name="dialogKey" expression="camelCase(String)" defaultValue="settings.dialogKey" alwaysStopAt="true" />
+    <variable name="avatarId" expression="" defaultValue="avatarId" alwaysStopAt="true" />
+    <variable name="address" expression="camelCase(String)" defaultValue="address" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="highlightui" value="questFacade.highlightUiElements($key$,avatarId);&#10;$END$" description="highlight ui elements according given ui key." toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="camelCase(String)" defaultValue="settings.keys" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="addQuestIcon" value="var properties = props(iconProp(QuestState.InProgress));&#10;questFacade.updateQuestFurniture($siloInventoryId$, avatarId, properties);&#10;$END$" description="add quest icon on the given inventory at game." toReformat="false" toShortenFQNames="true">
+    <variable name="siloInventoryId" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="addMetadata" value="getMetaData: function (language) {&#10;        var result = metadata[language];&#10;        if (result === undefined)&#10;            result = metadata[&quot;en&quot;];&#10;        result.description = result.description.replace(&quot;{targetTitle}&quot;, avatarData.targetTitle);&#10;        return result;&#10; }" description="add dafult metadata func." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="addMapData" value="    getMapData: function (eventData, locationFacade) {&#10;        var mapData = {list: []};&#10;&#10;        var list = locationFacade.getInventoryAddress(avatarId, settings.itemAssetKey);&#10;&#10;        for (var i = 0; i &lt; list.length; i++) {&#10;            var address = JSON.parse(list[i]);&#10;            address.state = QuestState.InProgress;&#10;            mapData.list.push(address);&#10;        }&#10;&#10;        return mapData;&#10;&#10;    }," description="add quest icon to map and game hud screen according given item assetkey." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="notify" value="gameFacade.sendNotification(avatarId, $message$);" description="send notify" toReformat="false" toShortenFQNames="true">
+    <variable name="message" expression="camelCase(String)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnStorageToBackpack" value="OnStorageToBackpack: function (eventData, gameFacade) {&#10;&#10;}" description="storage to backpack listener function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnInventoryAdded" value="OnInventoryAdded: function (eventData) {&#10;}," description="inventory added function listener" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnAction" value="OnAction: function (eventData) {&#10;&#10;}" description="dialog action listener" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnItemCraft" value="OnItemCraft: function (eventData) {&#10;}" description="item craft function listener." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnPublicMessage" value="OnPublicMessage: function (eventData) {&#10;&#10; }" description="public message sended listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnProfileLiked" value="OnProfileLiked: function (eventData) {&#10;}" description="profile liked listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnLocationLiked" value="OnLocationLiked: function (eventData) {&#10;}" description="location liked listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnLocationAddToFavorite" value="OnLocationAddToFavorite: function (eventData) {&#10;&#10;}" description="location favorite listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnEditRoom" value="OnEditRoom: function (eventData) {&#10;}" description="edit room listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnLocationBuy" value="OnLocationBuy: function (eventData, gameFacade) {&#10;}" description="location buy quest function listener." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnNewCitizen" value="OnNewCitizen: function (eventData) {&#10;}" description="new citizen quest listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnLoggedIn" value="OnLoggedIn: function (eventData) {&#10;}" description="avatar logged in listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnCollectFromGround" value="OnCollectFromGround: function (eventData) {&#10;}" description="collect from ground listener." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnAddFriend" value="OnAddFriend: function (eventData, gameFacade) {&#10;}" description="add friend listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnItemCrafted" value="OnItemCrafted: function (eventData) {&#10;}" description="after item crafted listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnMiniGameFinished" value="OnMiniGameFinished: function (eventData) {&#10;}" description="after mini game finished listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnTargetReached" value="OnTargetReached: function (eventData) {&#10;}" description="target reached quest function listeners." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnNewTax" value="OnNewTax: function (eventData) {&#10;}" description="new tax listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnCallFriend" value="OnCallFriend: function (eventData) {&#10;}" description="after call friend listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnPrivateMessage" value="OnPrivateMessage: function (eventData) {&#10;}" description="private message sended listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnNewCountry" value="OnNewCountry: function (eventData) {&#10;}" description="new country listener function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnContructionOpen" value="OnConstructionOpen: function (eventData, gameFacade) {&#10;}" description="contruction opened function listeners" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnCountryBalanceUpdated" value="OnCountryBalanceUpdated: function (eventData) {&#10;}" description="country balance updated function listener" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnAvatarInteract" value="OnAvatarInteract: function (eventData) {&#10;}" description="avatar interact with furniture listener." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="addReward" value="getRewards: function () {&#10;        return rewards;&#10;}," description="add rewards to quest completed." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="OnEatFood" value="OnEatFood: function (eventData) {&#10;}," description="eat food listener function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
