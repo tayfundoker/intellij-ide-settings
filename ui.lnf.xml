@@ -1,0 +1,8 @@
+<application>
+  <component name="DependencyUISettings">
+    <option name="UI_FILTER_LEGALS" value="true" />
+  </component>
+  <component name="UISettings">
+    <option name="SHOW_MAIN_MENU" value="false" />
+  </component>
+</application>

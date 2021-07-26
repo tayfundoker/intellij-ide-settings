@@ -1,0 +1,170 @@
+<templateSet group="OyunStudyosu">
+  <template name="log" value="logger.debug();" description="Logs something to console." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="addDispatcher" value="@Autowired&#10;  protected ApplicationEventPublisher dispatcher;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="foreach" value="for ($ELEMENT_TYPE$ $VAR$ : $ITERABLE_TYPE$) {&#10;    $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="addLogger" value="@Autowired&#10;  protected Logger logger;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="addContext" value="@Autowired &#10;  private ApplicationContext context;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="injectProperty" value="@Value(&quot;${$NAME$}&quot;)&#10;private $ELEMENT_TYPE$ $VAR$;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="addConfig" value="@RestController&#10;public class $ELEMENT_TYPE$ extends $ELEMENT_TYPE${}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ELEMENT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logjs" value="console.log($END$);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="byteBool" value="public boolean get$NAME$()&#10;  {&#10;    return $NAME$ == 1;&#10;  }&#10;&#10;  public void set$NAME$(boolean $NAME$)&#10;  {&#10;    this.$NAME$ = $NAME$ ? (byte) 1 : 0;&#10;  }" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getReqData" value="$TYPE$ vo = model.getRequestData($TYPE$.class);" description="Get request data from model by type." toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="serviceConfig" value="import com.jib.eros.core.annotations.AddRequestFilter;&#10;import com.jib.eros.core.annotations.AddRequestProcess;&#10;import com.jib.eros.core.annotations.ResponseData;&#10;import com.jib.eros.core.annotations.ServiceMapping;&#10;import com.jib.eros.core.enums.ServiceType;&#10;import com.jib.eros.modules.account.controller.avatarList.process.GetAvatarListProcess;&#10;import com.jib.eros.modules.account.controller.avatarList.vo.AvatarListResponseVo;&#10;import com.jib.eros.modules.account.filter.AccountFilterIsAuthenticated;&#10;import org.springframework.web.bind.annotation.RequestMapping;&#10;import org.springframework.web.bind.annotation.RequestMethod;&#10;import org.springframework.web.bind.annotation.RequestBody;&#10;&#10;public class $CLASS_NAME$&#10;{&#10;  @RequestMapping(value = &quot;/enter-url&quot;, method = RequestMethod.POST)&#10;  @ServiceMapping(name = &quot;enter-url&quot;,type = ServiceType.Post)&#10;  @ResponseData(type = ResponseVo.class)&#10;  @AddRequestFilter(type = AccountFilterIsAuthenticated.class)&#10;  @AddRequestProcess(type = Process.class)&#10;  @AddResponseFilter(name = &quot;enterFilterName&quot;, fields = &quot;enter,field,list&quot;)&#10;  public void configuration(@RequestBody final RequestVo data)&#10;  {&#10;  }&#10;}&#10;" description="Add service config function." toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="filterClass" value="import com.jib.eros.core.exceptions.RequestFilterException;&#10;import com.jib.eros.core.interfaces.IRequestFilter;&#10;import com.jib.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestFilter&#10;{&#10;  @Override&#10;  public void execute(IRequestInfo model) throws RequestFilterException&#10;  {&#10;    $END$&#10;  }&#10;}" description="Create empty filter class." toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="processClass" value="import com.jib.eros.core.interfaces.IRequestProcess;&#10;import com.jib.eros.core.exceptions.ProcessException;&#10;import com.jib.eros.core.interfaces.IRequestInfo;&#10;import org.springframework.stereotype.Component;&#10;&#10;@Component&#10;public class $CLASS_NAME$ implements IRequestProcess&#10;{&#10;  public void execute(IRequestInfo model) throws ProcessException&#10;  {&#10;    $END$&#10;  }&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getResData" value="$TYPE$ responseVo = model.getResponseData($TYPE$.class);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tfe" value="throw new RequestFilterException($CODE$, $MESSAGE$);" description="Throws filter exception" toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tpe" value="throw new ProcessException($CODE$, $MESSAGE$);" description="Throws process exception." toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getTimeMilliseconds" value="Calendar.getInstance().getTimeInMillis()" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getPlayer" value="Player player = playerModel.getById(model.getUserId());" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="addServiceData" value="@ServiceMapping(name = &quot;$NAME$&quot;, typeList = {ServiceType.Web})&#10;  @ResponseData(type = $END$.class)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="initList" value="if (list == null)&#10;    { list = new ArrayList&lt;&gt;(); }" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="makeAdmin" value="@AddRequestFilter(type = AdminAccountFilter.class)&#10;  @AddRequestFilter(type = ServiceLevelFilter.class)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="propMan" value="PropertyManager $NAME$ = new PropertyManager($END$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="addPropertyFacade" value="@Autowired&#10;private PropertyFacade propertyFacade;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="postConst" value="@PostConstruct&#10;  public void OnPostConstruct() { reload(); }" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="reportAdd" value="@Autowired&#10;  private ReportingFacade reportingFacade;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="reportError" value="reportingFacade.logSystemError(e,&quot;&quot;,&quot;&quot;);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="runService" value="ServiceRunVo runVo = new ServiceRunVo();&#10;    runVo.setServiceType(ServiceType.Socket);&#10;    runVo.setCommand(&quot;shopping-buy&quot;);&#10;    runVo.setPlayerId(model.getUserId());&#10;    runVo.setPlatform(model.getPlatform());&#10;    runVo.setRequestVo(buyItemRequestVo);&#10;    runVo.setLanguage(model.getLanguage());&#10;    runVo.setSkipFilters(true);&#10;&#10;    RequestInfo requestInfo = new RequestInfo();&#10;    serviceModel.run(runVo, requestInfo);&#10;&#10;    GenericResponseVo&lt;Object&gt; response = requestInfo.getResponse();&#10;&#10;    if (!response.isSuccess())&#10;    { throw new ProcessException(response.getResponseCode(), response.getErrorMessage()); }&#10;&#10;    BuyItemResponseVo buyResponse = requestInfo.getResponseData(BuyItemResponseVo.class);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="itemProperty" value="import com.jib.eros.modules.system.property.BaseProperty;&#10;import com.jib.eros.modules.system.property.IPropertyContext;&#10;import com.jib.eros.modules.system.property.PropertyType;&#10;&#10;public class $CLASS_NAME$ extends BaseProperty&#10;{&#10;  @Override&#10;  public int getId()&#10;  {&#10;    return $ID$;&#10;  }&#10;&#10;  @Override&#10;  public PropertyType getType()&#10;  {&#10;    return PropertyType.Item;&#10;  }&#10;&#10;  $END$&#10;&#10;  public $CLASS_NAME$()&#10;  {&#10;    super();&#10;  }&#10;&#10;  @Override&#10;  public BaseProperty toInventory(IPropertyContext context)&#10;  {&#10;    Live$CLASS_NAME$ liveProperty = new Live$CLASS_NAME$();&#10;    return liveProperty;&#10;  }&#10;&#10;  @Override&#10;  public Class&lt;? extends BaseProperty&gt; getInventoryType()&#10;  {&#10;    return Live$CLASS_NAME$.class;&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="0" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="liveProperty" value="import com.jib.eros.modules.system.property.BaseProperty;&#10;import com.jib.eros.modules.system.property.PropertyType;&#10;&#10;public class $CLASS_NAME$ extends BaseProperty&#10;{&#10;  @Override&#10;  public int getId()&#10;  {&#10;    return $ID$;&#10;  }&#10;&#10;  @Override&#10;  public PropertyType getType()&#10;  {&#10;    return PropertyType.Inventory;&#10;  }&#10;&#10;  public $CLASS_NAME$()&#10;  {&#10;    super();&#10;  }&#10;&#10;  @Override&#10;  public Class&lt;? extends BaseProperty&gt; getItemType()&#10;  {&#10;    return $END$$CLASS_NAME$.class;&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
