@@ -8,5 +8,16 @@
   </component>
   <component name="TodoConfiguration">
     <pattern pattern="\b(todo|fixme)\b.*" />
+    <pattern useCustomColors="true" pattern="\b(note)\b.*">
+      <option name="FOREGROUND" value="b3190e" />
+      <option name="FONT_TYPE" value="2" />
+      <option name="ERROR_STRIPE_COLOR" value="c71b7f" />
+    </pattern>
+    <pattern useCustomColors="true" pattern="\b(optimize)\b.*">
+      <option name="BACKGROUND" value="ffffff" />
+      <option name="FONT_TYPE" value="2" />
+      <option name="EFFECT_COLOR" value="ff0008" />
+      <option name="EFFECT_TYPE" value="1" />
+    </pattern>
   </component>
 </application>
