@@ -1,0 +1,7 @@
+<application>
+  <component name="PrintSettings">
+    <option name="printScope" value="2" />
+    <option name="PAPER_SIZE" value="A1" />
+    <option name="FONT_SIZE" value="8" />
+  </component>
+</application>
