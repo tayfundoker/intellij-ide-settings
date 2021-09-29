@@ -6,7 +6,7 @@
     <option name="showTipsOnStartup" value="false" />
   </component>
   <component name="Registry">
-    <entry key="debugger.watches.in.variables" value="false" />
     <entry key="go.run.processes.with.pty" value="false" />
+    <entry key="debugger.watches.in.variables" value="false" />
   </component>
 </application>
