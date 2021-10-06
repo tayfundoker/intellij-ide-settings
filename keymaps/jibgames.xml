@@ -2,6 +2,9 @@
   <action id="Arrangement.Rule.Edit" />
   <action id="BaseOnThisFunction" />
   <action id="ChangesView.Diff" />
+  <action id="ChangesView.Rename">
+    <keyboard-shortcut first-keystroke="shift f6" />
+  </action>
   <action id="CloseAllEditors">
     <keyboard-shortcut first-keystroke="shift ctrl w" />
   </action>
@@ -54,6 +57,9 @@
   <action id="Generate">
     <keyboard-shortcut first-keystroke="alt enter" />
   </action>
+  <action id="Git.Rename.Local.Branch">
+    <keyboard-shortcut first-keystroke="shift f6" />
+  </action>
   <action id="Git.Reword.Commit">
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
@@ -81,9 +87,6 @@
   </action>
   <action id="QuickJavaDoc">
     <mouse-shortcut keystroke="alt button2" />
-  </action>
-  <action id="RefactoringMenuRenameFile">
-    <keyboard-shortcut first-keystroke="f2" />
   </action>
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="shift ctrl f" />
