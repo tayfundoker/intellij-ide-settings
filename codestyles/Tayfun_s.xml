@@ -1,5 +1,6 @@
 <code_scheme name="Tayfun's" version="173">
   <option name="AUTODETECT_INDENTS" value="false" />
+  <option name="ENABLE_SECOND_REFORMAT" value="true" />
   <codeStyleSettings language="JAVA">
     <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="0" />
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
