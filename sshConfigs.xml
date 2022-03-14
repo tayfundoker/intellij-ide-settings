@@ -1,0 +1,12 @@
+<application>
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="168.119.52.32" id="fb44b36f-fb36-4860-877d-621cede4d301" port="22" customName="mySQL" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="mySQL" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="142.132.225.114" id="1ae64c06-2dca-409d-8e54-6fdd8cc7ff21" port="22" customName="mongo" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="mongo" />
+      </sshConfig>
+    </configs>
+  </component>
+</application>
