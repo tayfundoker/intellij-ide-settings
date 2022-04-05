@@ -1,0 +1,9 @@
+<application>
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="142.132.225.114" id="f3eaf6a2-8f71-4800-ac43-e7a05656d150" port="22" customName="Mongo Server" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="Mongo Server" />
+      </sshConfig>
+    </configs>
+  </component>
+</application>
