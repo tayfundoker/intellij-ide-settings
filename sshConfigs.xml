@@ -1,23 +1,8 @@
 <application>
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="PASSWORD" host="157.90.254.190" id="f44ae0c4-6799-4d02-a09d-3f0a58c56d8d" port="22" customName="Kubernetes Master" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
-        <option name="customName" value="Kubernetes Master" />
-      </sshConfig>
-      <sshConfig authType="PASSWORD" host="159.69.190.192" id="6eb155a2-cd87-413d-b0f3-5d70b1586b96" port="22" customName="Kubernetes Worker 2" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
-        <option name="customName" value="Kubernetes Worker 2" />
-      </sshConfig>
-      <sshConfig authType="PASSWORD" host="49.12.47.69" id="b429f6d6-1ec7-4164-82b2-f7c157776e31" port="22" customName="Kubernetes Worker 3 (Prod)" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
-        <option name="customName" value="Kubernetes Worker 3 (Prod)" />
-      </sshConfig>
-      <sshConfig authType="PASSWORD" host="168.119.52.32" id="7d12532c-5958-4598-a8b5-f09b06cf3040" port="22" customName="MySql" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
-        <option name="customName" value="MySql" />
-      </sshConfig>
-      <sshConfig authType="PASSWORD" host="142.132.225.114" id="8b33c19e-c810-4d44-8e19-1efa3dc89d83" port="22" customName="Mongo" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
-        <option name="customName" value="Mongo" />
-      </sshConfig>
-      <sshConfig authType="PASSWORD" host="168.119.48.153" id="332d615d-0e27-45a8-b366-a252bc14b470" port="22" customName="Kubernetes Worker 1" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
-        <option name="customName" value="Kubernetes Worker 1" />
+      <sshConfig authType="PASSWORD" host="142.132.225.114" id="f3eaf6a2-8f71-4800-ac43-e7a05656d150" port="22" customName="Mongo Server" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="Mongo Server" />
       </sshConfig>
     </configs>
   </component>
