@@ -1,23 +1,23 @@
 <application>
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="PASSWORD" host="142.132.225.114" id="f3eaf6a2-8f71-4800-ac43-e7a05656d150" port="22" customName="Mongo Server" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
-        <option name="customName" value="Mongo Server" />
+      <sshConfig authType="PASSWORD" host="168.119.241.208" id="97eb09e1-a510-40c2-93dd-776f5c96e19e" port="22" customName="File Server" nameFormat="CUSTOM" username="eros">
+        <option name="customName" value="File Server" />
       </sshConfig>
       <sshConfig authType="PASSWORD" host="157.90.254.190" id="b9f031d2-d083-49eb-8ce9-5fd95c286bed" port="22" customName="Master Node" nameFormat="CUSTOM" username="root">
         <option name="customName" value="Master Node" />
       </sshConfig>
-      <sshConfig authType="PASSWORD" host="49.12.47.69" id="15556ecf-7147-4997-a5a7-2f601b4689d8" port="22" customName="Worker 3 Node (Prodcution)" nameFormat="CUSTOM" username="root">
-        <option name="customName" value="Worker 3 Node (Prodcution)" />
+      <sshConfig authType="PASSWORD" host="142.132.225.114" id="f3eaf6a2-8f71-4800-ac43-e7a05656d150" port="22" customName="Mongo Server" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="Mongo Server" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="168.119.52.32" id="f11a95d8-cbff-4891-83f6-6b8b84c4ae1d" port="22" customName="MySQL Server" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="MySQL Server" />
       </sshConfig>
       <sshConfig authType="PASSWORD" host="168.119.48.153" id="bbaa1124-24ec-4546-9077-76afffc9f5cc" port="22" customName="Worker 1 Node (Staging)" nameFormat="CUSTOM" username="root">
         <option name="customName" value="Worker 1 Node (Staging)" />
       </sshConfig>
-      <sshConfig authType="PASSWORD" host="168.119.241.208" id="97eb09e1-a510-40c2-93dd-776f5c96e19e" port="22" customName="File Server" nameFormat="CUSTOM" username="eros">
-        <option name="customName" value="File Server" />
-      </sshConfig>
-      <sshConfig authType="PASSWORD" host="168.119.52.32" id="f11a95d8-cbff-4891-83f6-6b8b84c4ae1d" port="22" customName="MySQL Server" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
-        <option name="customName" value="MySQL Server" />
+      <sshConfig authType="PASSWORD" host="49.12.47.69" id="15556ecf-7147-4997-a5a7-2f601b4689d8" port="22" customName="Worker 3 Node (Prodcution)" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="Worker 3 Node (Prodcution)" />
       </sshConfig>
     </configs>
   </component>
