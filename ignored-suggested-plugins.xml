@@ -4,6 +4,7 @@
       <list>
         <option value="com.haulmont.jpab" />
         <option value="idea.plugin.protoeditor" />
+        <option value="aws.toolkit" />
       </list>
     </option>
   </component>
