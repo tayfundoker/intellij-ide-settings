@@ -86,14 +86,14 @@
     <data-views />
     <general />
     <debuggers>
-      <debugger id="javascript">
-        <configuration>
-          <custom-object-presentation />
-        </configuration>
-      </debugger>
       <debugger id="groovy_debugger">
         <configuration>
           <option name="ENABLE_GROOVY_HOTSWAP" value="false" />
+        </configuration>
+      </debugger>
+      <debugger id="javascript">
+        <configuration>
+          <custom-object-presentation />
         </configuration>
       </debugger>
     </debuggers>
