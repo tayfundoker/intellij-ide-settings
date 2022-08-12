@@ -2,6 +2,38 @@
   <component name="SettingsSyncPlugins">
     <option name="plugins">
       <map>
+        <entry key="berezhkoe.cognitivecomplexity">
+          <value>
+            <PluginData>
+              <option name="dependencies">
+                <set>
+                  <option value="com.intellij.modules.platform" />
+                </set>
+              </option>
+            </PluginData>
+          </value>
+        </entry>
+        <entry key="com.os.eros.quest.tools">
+          <value>
+            <PluginData />
+          </value>
+        </entry>
+        <entry key="izhangzhihao.rainbow.brackets">
+          <value>
+            <PluginData>
+              <option name="dependencies">
+                <set>
+                  <option value="com.intellij.modules.lang" />
+                </set>
+              </option>
+            </PluginData>
+          </value>
+        </entry>
+        <entry key="org.jetbrains.kotlin">
+          <value>
+            <PluginData />
+          </value>
+        </entry>
         <entry key="zielu.gittoolbox">
           <value>
             <PluginData>
