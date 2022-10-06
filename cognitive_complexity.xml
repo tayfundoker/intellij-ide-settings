@@ -1,0 +1,27 @@
+<application>
+  <component name="CognitiveComplexitySetting">
+    <option name="thresholdsList">
+      <list>
+        <ThresholdState>
+          <option name="color" value="Gray" />
+          <option name="text" value="Complexity is %complexity%" />
+        </ThresholdState>
+        <ThresholdState>
+          <option name="color" value="Blue" />
+          <option name="text" value="Complexity is %complexity%" />
+          <option name="threshold" value="10" />
+        </ThresholdState>
+        <ThresholdState>
+          <option name="color" value="Green" />
+          <option name="text" value="Complexity is %complexity%" />
+          <option name="threshold" value="50" />
+        </ThresholdState>
+        <ThresholdState>
+          <option name="color" value="Violet" />
+          <option name="text" value="Complexity is %complexity%" />
+          <option name="threshold" value="80" />
+        </ThresholdState>
+      </list>
+    </option>
+  </component>
+</application>
