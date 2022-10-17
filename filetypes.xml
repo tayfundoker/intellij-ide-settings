@@ -5,7 +5,6 @@
       <mapping ext="space.kts" type="Kotlin" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
-      <mapping pattern="post-merge" type="PLAIN_TEXT" />
       <mapping pattern="test" type="PLAIN_TEXT" />
       <mapping pattern="roomDesignUpdate.html" type="PLAIN_TEXT" />
       <mapping ext="service" type="PLAIN_TEXT" />
