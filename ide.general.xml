@@ -9,6 +9,5 @@
     <entry key="go.run.processes.with.pty" value="false" />
     <entry key="debugger.watches.in.variables" value="false" />
     <entry key="ide.balloon.shadow.size" value="0" />
-    <entry key="ide.experimental.ui" value="false" />
   </component>
 </application>
