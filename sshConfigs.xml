@@ -16,8 +16,11 @@
       <sshConfig authType="PASSWORD" host="168.119.48.153" id="bbaa1124-24ec-4546-9077-76afffc9f5cc" port="22" customName="Worker 1 Node (Staging)" nameFormat="CUSTOM" username="root">
         <option name="customName" value="Worker 1 Node (Staging)" />
       </sshConfig>
-      <sshConfig authType="PASSWORD" host="49.12.47.69" id="15556ecf-7147-4997-a5a7-2f601b4689d8" port="22" customName="Worker 3 Node (Prodcution)" nameFormat="CUSTOM" username="root">
-        <option name="customName" value="Worker 3 Node (Prodcution)" />
+      <sshConfig authType="PASSWORD" host="49.12.47.69" id="15556ecf-7147-4997-a5a7-2f601b4689d8" port="22" customName="Worker 3 Node (Production)" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="Worker 3 Node (Production)" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="88.99.87.77" id="3e68d73a-832b-488e-9644-3930a7276442" port="22" customName="Polity Bot Client" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="Polity Bot Client" />
       </sshConfig>
     </configs>
   </component>
