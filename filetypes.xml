@@ -13,6 +13,7 @@
       <mapping ext="p12" type="PLAIN_TEXT" />
       <mapping ext="unityweb" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
+      <removed_mapping ext="js" approved="true" type="JavaScript" />
       <removed_mapping ext="psd" approved="true" type="Image" />
     </extensionMap>
   </component>
