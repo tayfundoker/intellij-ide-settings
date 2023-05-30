@@ -4,17 +4,17 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="getMapData" value="getMapData: function () {&#10;    var mapData = {list: []};&#10;&#10;    var tmpList = api.country().myFurnitureList()&#10;        .getAddress(QuestState.Info);&#10;&#10;    mapData.list = JSON.parse(tmpList);&#10;&#10;    return mapData;&#10;  }" toReformat="false" toShortenFQNames="true">
+  <template name="getMapData" value="getMapData: function () {&#10;    var mapData = {list: []};&#10;&#10;    var tmpList = api.country().myFurnitureList()&#10;        .getAddress(QuestState.Info);&#10;&#10;    mapData.list = JSON.parse(tmpList);&#10;&#10;    return mapData;&#10;  }" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="getRewards" value="getRewards: function () {&#10;    return rewards;&#10;  }" toReformat="false" toShortenFQNames="true">
+  <template name="getRewards" value="getRewards: function () {&#10;    return rewards;&#10;  }" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="getMetaData" value="getMetaData: function (language) {&#10;    var data = metadata[language];&#10;&#10;    var result = api.metadata().title(data.title)&#10;        .description(data.description)&#10;        .addStep(data.step0, avatarData.steps[0]).get();&#10;&#10;    return result;&#10;  }" toReformat="false" toShortenFQNames="true">
+  <template name="getMetaData" value="getMetaData: function (language) {&#10;    var data = metadata[language];&#10;&#10;    var result = api.metadata().title(data.title)&#10;        .description(data.description)&#10;        .addStep(data.step0, avatarData.steps[0]).get();&#10;&#10;    return result;&#10;  }" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
