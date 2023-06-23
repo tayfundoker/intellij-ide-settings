@@ -7,10 +7,10 @@
       <sshConfig authType="PASSWORD" host="157.90.254.190" id="b9f031d2-d083-49eb-8ce9-5fd95c286bed" port="22" customName="Master Node" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
         <option name="customName" value="Master Node" />
       </sshConfig>
-      <sshConfig authType="PASSWORD" host="142.132.225.114" id="f3eaf6a2-8f71-4800-ac43-e7a05656d150" port="22" customName="Mongo Server" nameFormat="CUSTOM" username="root">
+      <sshConfig host="5.161.187.64" id="f3eaf6a2-8f71-4800-ac43-e7a05656d150" keyPath="C:\Users\cenk9\.ssh\polity" port="22" customName="Mongo Server" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
         <option name="customName" value="Mongo Server" />
       </sshConfig>
-      <sshConfig authType="PASSWORD" host="168.119.52.32" id="f11a95d8-cbff-4891-83f6-6b8b84c4ae1d" port="22" customName="MySQL Server" nameFormat="CUSTOM" username="root">
+      <sshConfig host="5.161.56.193" id="f11a95d8-cbff-4891-83f6-6b8b84c4ae1d" keyPath="C:\Users\cenk9\.ssh\polity" port="22" customName="MySQL Server" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
         <option name="customName" value="MySQL Server" />
       </sshConfig>
       <sshConfig authType="PASSWORD" host="88.99.87.77" id="3e68d73a-832b-488e-9644-3930a7276442" port="22" customName="Polity Bot Client" nameFormat="CUSTOM" username="root">
