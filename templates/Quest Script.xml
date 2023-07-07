@@ -19,7 +19,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="OnQuestCompleted" value="OnQuestCompleted: function (eventData) {&#10;    if(eventData.id == api.getAvatarQuest().questId){&#10;      &#10;    }&#10;  }" description="" toReformat="false" toShortenFQNames="true">
+  <template name="OnLocationChanged" value="OnLocationChanged: function () {&#10;    if (api.currentRoom().isCity()) {&#10;      var location = api.currentRoom().furnitureList()&#10;          .getLives();&#10;&#10;      if (location !== null) {&#10;        for (var i = 0; i &lt; location.length; i++) {&#10;          api.currentRoom().overrideFurniture(location.get(i))&#10;              .addProperty(api.property().questIcon(QuestState.InProgress)).id();&#10;        }&#10;      }&#10;    }&#10;  }" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
