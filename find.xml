@@ -12,8 +12,8 @@
     <mask>*.hx</mask>
     <mask>*Repository.java</mask>
     <mask>*.json</mask>
-    <mask>*.js</mask>
     <mask>*.html</mask>
     <mask>*.java</mask>
+    <mask>*.js</mask>
   </component>
 </application>
